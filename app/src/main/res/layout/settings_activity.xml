@@ -1,0 +1,274 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    >
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_14mdp"
+            android:layout_marginTop="@dimen/_14mdp"
+            android:fontFamily="@font/prompt_regular"
+
+            android:text="Setting"
+            android:textColor="#1AADBF"
+            android:textSize="@dimen/_17mdp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/add_home_btn_1"
+            android:layout_width="@dimen/_30mdp"
+            android:layout_height="@dimen/_30mdp"
+            android:layout_marginRight="@dimen/_5mdp"
+            android:layout_centerInParent="true"
+            android:visibility="visible"
+            app:layout_constraintBottom_toBottomOf="@+id/current_home_name"
+            app:layout_constraintEnd_toStartOf="@+id/current_home_name"
+            app:layout_constraintHorizontal_bias="0.5"
+
+            app:layout_constraintTop_toTopOf="@+id/current_home_name"
+            app:layout_constraintVertical_bias="0.5"
+            app:lottie_autoPlay="true"
+            app:lottie_loop="true"
+            app:lottie_rawRes="@raw/home_animation" />
+
+        <TextView
+            android:id="@+id/current_home_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+
+            android:fontFamily="@font/prompt_regular"
+
+            android:textColor="#1AADBF"
+            android:textSize="@dimen/_17mdp"
+            app:layout_constraintBottom_toBottomOf="@+id/textView6"
+            app:layout_constraintEnd_toEndOf="@+id/set_btn"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/ssid_input"
+            android:layout_width="@dimen/_180mdp"
+            android:layout_height="@dimen/_35mdp"
+            android:layout_marginTop="@dimen/_10mdp"
+            android:background="@drawable/back_btn_color"
+            android:gravity="center"
+            android:hint="SSID"
+
+            android:textSize="@dimen/_15font_mdp"
+            app:layout_constraintEnd_toStartOf="@+id/get_ssid"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView6" />
+
+        <Button
+            android:id="@+id/set_btn"
+            android:layout_width="@dimen/_50mdp"
+            android:layout_height="@dimen/_35mdp"
+
+            android:background="@drawable/back_btn_color"
+            android:fontFamily="@font/prompt_regular"
+
+            android:text="Set"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_10font_mdp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/get_ssid"
+            app:layout_constraintTop_toTopOf="@+id/get_ssid" />
+
+        <EditText
+            android:id="@+id/pasword_input"
+            android:layout_width="@dimen/_180mdp"
+            android:layout_height="@dimen/_35mdp"
+            android:layout_marginTop="@dimen/_10mdp"
+            android:background="@drawable/back_btn_color"
+            android:gravity="center"
+            android:hint="Pasword"
+            android:textSize="@dimen/_15font_mdp"
+            app:layout_constraintEnd_toEndOf="@+id/ssid_input"
+            app:layout_constraintHorizontal_bias="0.666"
+            app:layout_constraintStart_toStartOf="@+id/ssid_input"
+            app:layout_constraintTop_toBottomOf="@+id/ssid_input" />
+
+
+        <EditText
+            android:id="@+id/api_key_input"
+            android:layout_width="@dimen/_180mdp"
+            android:layout_height="@dimen/_35mdp"
+            android:background="@drawable/back_btn_color"
+            android:gravity="center"
+            android:hint="API Key"
+            android:text="5dab3c5870888bb3ee81e939fc4d4dcc"
+            android:layout_marginTop="@dimen/_10mdp"
+            android:textSize="@dimen/_15font_mdp"
+            android:singleLine="true"
+            app:layout_constraintEnd_toEndOf="@+id/ssid_input"
+            app:layout_constraintHorizontal_bias="0.666"
+            app:layout_constraintStart_toStartOf="@+id/ssid_input"
+            app:layout_constraintTop_toBottomOf="@+id/pasword_input" />
+
+
+        <EditText
+            android:id="@+id/city_name"
+            android:layout_width="@dimen/_180mdp"
+            android:layout_height="@dimen/_35mdp"
+            android:background="@drawable/back_btn_color"
+            android:gravity="center"
+            android:hint="City Name"
+            android:singleLine="true"
+            android:layout_marginTop="@dimen/_10mdp"
+
+            android:textSize="@dimen/_15font_mdp"
+            app:layout_constraintEnd_toEndOf="@+id/ssid_input"
+            app:layout_constraintHorizontal_bias="0.666"
+            app:layout_constraintStart_toStartOf="@+id/ssid_input"
+            app:layout_constraintTop_toBottomOf="@+id/api_key_input" />
+
+
+        <Button
+            android:id="@+id/get_ssid"
+            android:layout_width="@dimen/_50mdp"
+            android:layout_height="@dimen/_35mdp"
+            android:background="@drawable/back_btn_color"
+            android:fontFamily="@font/prompt_regular"
+            android:text="get SSID"
+
+            android:textColor="@color/white"
+            android:textSize="@dimen/_10font_mdp"
+            app:layout_constraintEnd_toStartOf="@+id/set_btn"
+            app:layout_constraintStart_toEndOf="@+id/ssid_input"
+            app:layout_constraintTop_toTopOf="@+id/city_name" />
+
+        <Button
+            android:id="@+id/sync_btn"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/_35mdp"
+            android:background="@drawable/back_btn_color"
+            android:text="Sync"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:layout_marginTop="@dimen/_10mdp"
+            android:textSize="@dimen/_10font_mdp"
+            app:layout_constraintEnd_toEndOf="@+id/set_btn"
+            app:layout_constraintStart_toStartOf="@+id/ssid_input"
+            app:layout_constraintTop_toBottomOf="@+id/city_name" />
+
+        <Button
+            android:id="@+id/home_style"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/_35mdp"
+            android:background="@drawable/back_btn_color"
+            android:text="Home Style"
+            android:layout_marginTop="@dimen/_10mdp"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_10font_mdp"
+            app:layout_constraintEnd_toEndOf="@+id/set_btn"
+            app:layout_constraintStart_toStartOf="@+id/ssid_input"
+            app:layout_constraintTop_toBottomOf="@+id/sync_btn" />
+
+        <Button
+            android:id="@+id/change_Home"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/_35mdp"
+            android:background="@drawable/back_btn_color"
+            android:text="Change Home"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:layout_marginTop="@dimen/_10mdp"
+            android:textSize="@dimen/_10font_mdp"
+            app:layout_constraintEnd_toEndOf="@+id/home_style"
+            app:layout_constraintStart_toStartOf="@+id/home_style"
+            app:layout_constraintTop_toBottomOf="@+id/home_style" />
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="SMS"
+            android:textColor="#1AADBF"
+            android:textSize="@dimen/_17mdp"
+            app:layout_constraintStart_toStartOf="@+id/ssid_input"
+            app:layout_constraintTop_toBottomOf="@+id/change_Home" />
+
+
+        <TextView
+            android:id="@+id/sdfsdfsdfd"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/_10mdp"
+            android:text="Active SMS :"
+            android:textColor="#D9D4CF"
+            android:textSize="@dimen/_14mdp"
+            app:layout_constraintStart_toStartOf="@+id/textView7"
+            app:layout_constraintTop_toBottomOf="@+id/textView7" />
+
+
+        <com.google.android.material.switchmaterial.SwitchMaterial
+            android:id="@+id/sms_switch"
+            android:layout_width="@dimen/_35mdp"
+            android:layout_height="@dimen/_35mdp"
+            android:scaleX="1.5"
+
+            android:scaleY="1.5"
+            app:layout_constraintBottom_toBottomOf="@+id/sdfsdfsdfd"
+            app:layout_constraintEnd_toEndOf="@+id/set_btn"
+            app:layout_constraintTop_toTopOf="@+id/sdfsdfsdfd" />
+
+
+        <TextView
+            android:id="@+id/textView_status"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/_20mdp"
+            android:text="Active Live Status SMS :"
+            android:textColor="#D9D4CF"
+            android:textSize="@dimen/_14mdp"
+            app:layout_constraintStart_toStartOf="@+id/sdfsdfsdfd"
+            app:layout_constraintTop_toBottomOf="@+id/sdfsdfsdfd" />
+
+
+        <TextView
+            android:id="@+id/helper_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="You need to active SMS first"
+
+            android:textColor="#968E96"
+            android:textSize="@dimen/_9font_mdp"
+
+            app:layout_constraintStart_toStartOf="@+id/textView_status"
+            app:layout_constraintTop_toBottomOf="@+id/textView_status" />
+
+        <com.google.android.material.switchmaterial.SwitchMaterial
+            android:id="@+id/live_sms_switch"
+            android:layout_width="@dimen/_35mdp"
+            android:layout_height="@dimen/_35mdp"
+            android:enabled="false"
+            android:scaleX="1.5"
+            android:scaleY="1.5"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/sms_switch"
+            app:layout_constraintStart_toStartOf="@+id/sms_switch"
+            app:layout_constraintTop_toTopOf="@+id/textView_status" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+
+
+
+</ScrollView>

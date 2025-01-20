@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item >
+        <bitmap android:src="@drawable/fazaye_weather" /> <!-- تصویر مورد نظر -->
+    </item>
+
+    <!-- لایه‌ی اول: شکل مربعی با نوار مشکی -->
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="@android:color/transparent" /> <!-- پس‌زمینه شفاف -->
+            <stroke
+                android:color="#A8A7A7" android:width="8dp" />
+            <corners android:radius="35dp" /> <!-- مقدار radius را تغییر دهید (مطابق با لایه‌ی اول) --><!-- رنگ مشکی -->
+                   <!-- عرض نوار مشکی -->
+        </shape>
+    </item>
+
+    <!-- لایه‌ی دوم: تصویر اصلی -->
+
+
+</layer-list>

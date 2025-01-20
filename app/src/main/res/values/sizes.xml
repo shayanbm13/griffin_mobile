@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="big_font_size">@dimen/_14font_mdp</dimen>
+    <dimen name="normal_font_size">@dimen/_12font_mdp</dimen>
+    <dimen name="small_font_size">@dimen/_10font_mdp</dimen>
+    <dimen name="space_size">@dimen/_10mdp</dimen>
+    <dimen name="header_space_size">@dimen/_14mdp</dimen>
+
+
+</resources>

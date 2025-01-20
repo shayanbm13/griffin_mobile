@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+
+    android:layout_height="match_parent"
+    android:background="@drawable/background_gradiant"
+    tools:context=".fragments.room_edit">
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Rooms "
+
+        android:layout_marginTop="@dimen/header_space_size"
+        android:layout_marginLeft="@dimen/header_space_size"
+
+        app:layout_constraintStart_toStartOf="parent"
+        android:textSize="@dimen/big_font_size"
+        android:textColor="@color/white"
+        android:fontFamily="@font/prompt_regular"
+
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/add_btn"
+        android:layout_width="@dimen/_30mdp"
+        android:layout_height="@dimen/_30mdp"
+        android:layout_marginRight="@dimen/header_space_size"
+        android:background="@drawable/add_btn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/title" />
+
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/edit_rooms_receycelerview"
+        android:layout_width="match_parent"
+
+        android:layout_height="0dp"
+        android:layout_marginRight="@dimen/_10mdp"
+        android:layout_marginLeft="@dimen/_10mdp"
+        android:layout_marginBottom="@dimen/_10mdp"
+        android:layout_marginTop="@dimen/header_space_size"
+
+        android:padding="@dimen/_15mdp"
+        android:background="@drawable/back_low_opasity"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/add_btn"
+        app:layout_constraintStart_toStartOf="@+id/title"
+        app:layout_constraintTop_toBottomOf="@+id/add_btn" />
+    
+    
+
+</androidx.constraintlayout.widget.ConstraintLayout>

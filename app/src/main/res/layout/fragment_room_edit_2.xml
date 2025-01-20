@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_gradiant"
+    tools:context=".fragments.room_edit_2">
+
+    <Button
+        android:id="@+id/ok_btn"
+        android:layout_width="@dimen/_60mdp"
+        android:layout_height="@dimen/_30mdp"
+        android:layout_marginTop="@dimen/header_space_size"
+        android:background="@drawable/background_gradiant_2"
+        android:text="OK"
+        android:textColor="@color/white"
+        android:textSize="@dimen/normal_font_size"
+        app:layout_constraintEnd_toEndOf="@+id/constraintLayout5"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/Delete_btn"
+        android:layout_width="@dimen/_60mdp"
+        android:layout_height="@dimen/_30mdp"
+        android:layout_marginRight="@dimen/_15mdp"
+        android:background="@drawable/background_gradiant_2"
+        android:text="Delete"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="@dimen/normal_font_size"
+        app:layout_constraintBottom_toBottomOf="@+id/ok_btn"
+        app:layout_constraintEnd_toStartOf="@+id/ok_btn"
+        app:layout_constraintTop_toTopOf="@+id/ok_btn" />
+
+
+    <Button
+        android:id="@+id/close_btn"
+        android:layout_width="@dimen/_30mdp"
+        android:layout_height="@dimen/_30mdp"
+        android:layout_marginLeft="@dimen/_10mdp"
+        android:background="@android:drawable/ic_menu_close_clear_cancel"
+        app:layout_constraintBottom_toBottomOf="@+id/Delete_btn"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/Delete_btn" />
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout5"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_180mdp"
+        android:layout_marginLeft="@dimen/_10mdp"
+        android:layout_marginTop="@dimen/header_space_size"
+        android:layout_marginRight="@dimen/_10mdp"
+        android:background="@drawable/back_low_opasity"
+        android:padding="@dimen/_15mdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.48"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ok_btn">
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardView"
+            android:layout_width="@dimen/_120mdp"
+
+            android:layout_height="@dimen/_90mdp"
+            app:cardCornerRadius="16dp"
+            app:cardElevation="4dp"
+            app:cardUseCompatPadding="true"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/imageView5"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop"
+
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/select_image_help"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:text="select Image"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_11font_mdp"
+                    android:fontFamily="@font/prompt_regular"
+                    app:layout_constraintBottom_toBottomOf="@+id/imageView5"
+                    app:layout_constraintEnd_toEndOf="@+id/imageView5"
+                    app:layout_constraintStart_toStartOf="@+id/imageView5"
+                    app:layout_constraintTop_toTopOf="@+id/imageView5" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        </androidx.cardview.widget.CardView>
+
+        <EditText
+            android:id="@+id/room_name"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_45mdp"
+            android:layout_marginTop="@dimen/space_size"
+            android:fontFamily="@font/prompt_regular"
+            android:hint="Room Name"
+            android:textColor="@color/white"
+            android:textSize="@dimen/normal_font_size"
+
+            app:layout_constraintStart_toStartOf="@+id/cardView"
+            app:layout_constraintTop_toBottomOf="@+id/cardView" />
+
+        <TextView
+            android:id="@+id/style_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_5mdp"
+            android:layout_marginTop="@dimen/header_space_size"
+            android:text="Style : "
+            android:textColor="@color/white"
+            android:textSize="@dimen/normal_font_size"
+            app:layout_constraintStart_toEndOf="@+id/cardView"
+            app:layout_constraintTop_toTopOf="@+id/cardView" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <Button
+        android:id="@+id/style_1"
+        android:layout_width="@dimen/_70mdp"
+        android:layout_height="@dimen/_40mdp"
+        android:background="@drawable/background_gradiant_2"
+        android:fontFamily="@font/prompt_regular"
+        android:visibility="invisible"
+        android:text="Style 1"
+
+        android:textColor="@color/white"
+        android:textSize="@dimen/normal_font_size"
+        app:layout_constraintBottom_toBottomOf="@+id/style_2"
+        app:layout_constraintEnd_toStartOf="@+id/style_2"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/constraintLayout5"
+        app:layout_constraintTop_toTopOf="@+id/style_2" />
+
+    <Button
+        android:id="@+id/style_2"
+        android:layout_width="@dimen/_70mdp"
+        android:layout_height="@dimen/_40mdp"
+        android:layout_marginTop="@dimen/header_space_size"
+
+        android:background="@drawable/background_gradiant_2"
+        android:fontFamily="@font/prompt_regular"
+        android:visibility="invisible"
+        android:text="Style 2"
+        android:textColor="@color/white"
+        android:textSize="@dimen/normal_font_size"
+        app:layout_constraintEnd_toStartOf="@+id/style_3"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/style_1"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout5" />
+
+    <Button
+        android:id="@+id/style_3"
+        android:layout_width="@dimen/_70mdp"
+        android:layout_height="@dimen/_40mdp"
+        android:background="@drawable/background_gradiant_2"
+        android:fontFamily="@font/prompt_regular"
+        android:visibility="invisible"
+        android:text="Style 3"
+        android:textColor="@color/white"
+        android:textSize="@dimen/normal_font_size"
+        app:layout_constraintBottom_toBottomOf="@+id/style_2"
+        app:layout_constraintEnd_toEndOf="@+id/constraintLayout5"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/style_2"
+        app:layout_constraintTop_toTopOf="@+id/style_2" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="0dp"
+        android:id="@+id/home_style_recyceler_view"
+        android:layout_marginTop="@dimen/space_size"
+        android:visibility="invisible"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/constraintLayout5"
+        app:layout_constraintStart_toStartOf="@+id/constraintLayout5"
+        app:layout_constraintTop_toBottomOf="@+id/style_2" />
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+

@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="@dimen/_280mdp"
+    android:layout_height="@dimen/_400mdp"
+    android:background="@drawable/popup_back2"
+    android:padding="@dimen/_15mdp">
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/prompt_regular"
+        android:text="Home Style : "
+        android:layout_marginLeft="@dimen/_5mdp"
+        android:textColor="@color/white"
+        android:textSize="@dimen/big_font_size"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/add_button"
+        android:layout_width="@dimen/_28mdp"
+        android:layout_height="@dimen/_28mdp"
+        android:background="@drawable/add_btn"
+        android:layout_marginBottom="@dimen/_3mdp"
+        app:layout_constraintBottom_toTopOf="@+id/constraintLayout3"
+        app:layout_constraintEnd_toEndOf="@+id/constraintLayout3" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout3"
+        android:layout_width="@dimen/_220mdp"
+        android:layout_height="@dimen/_160mdp"
+        android:layout_marginTop="@dimen/space_size"
+        app:layout_constraintBottom_toTopOf="@+id/constraintLayout4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3"
+        app:layout_constraintVertical_bias="0.5">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rooms_recyceler_view"
+            android:layout_width="match_parent"
+            android:background="@drawable/popup_back_3"
+            android:padding="@dimen/_15mdp"
+            android:layout_height="match_parent"
+
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout4"
+        android:layout_width="@dimen/_210mdp"
+        android:layout_height="@dimen/_120mdp"
+        android:layout_marginTop="@dimen/space_size"
+        android:background="@drawable/popup_back_3"
+        android:padding="@dimen/_5mdp"
+        app:layout_constraintBottom_toTopOf="@+id/button"
+        app:layout_constraintEnd_toEndOf="@+id/constraintLayout3"
+        app:layout_constraintStart_toStartOf="@+id/constraintLayout3"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout3"
+        app:layout_constraintVertical_bias="0.5">
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/disable_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/prompt_regular"
+                android:text="Select a Room First"
+                android:textColor="@color/white"
+                android:textSize="@dimen/big_font_size"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/enable_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="visible"
+
+
+            android:clickable="false"
+            android:alpha="0.15"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/room_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/space_size"
+                android:layout_marginTop="@dimen/space_size"
+                android:text="Room Name"
+                android:textColor="@color/white"
+                android:textSize="@dimen/normal_font_size"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/style_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/space_size"
+                android:text="Style"
+                android:textColor="@color/white"
+
+                android:textSize="@dimen/normal_font_size"
+                app:layout_constraintStart_toStartOf="@+id/room_name"
+                app:layout_constraintTop_toBottomOf="@+id/room_name" />
+
+
+            <ImageView
+                android:layout_width="@dimen/_60mdp"
+                android:layout_height="@dimen/_50mdp"
+                android:clickable="false"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.8"
+                app:layout_constraintStart_toEndOf="@+id/room_name"
+                app:layout_constraintTop_toTopOf="@+id/room_name" />\
+
+
+            <EditText
+                android:id="@+id/editText"
+                android:layout_width="@dimen/_130mdp"
+                android:layout_height="@dimen/_35mdp"
+                android:textSize="@dimen/big_font_size"
+                android:clickable="false"
+                android:enabled="false"
+                android:layout_marginTop="@dimen/space_size"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/style_name"
+                app:layout_constraintTop_toBottomOf="@+id/style_name" />
+
+            <Button
+                android:id="@+id/ok_btn"
+                android:layout_width="@dimen/_40mdp"
+                android:layout_height="@dimen/_25mdp"
+                android:background="@drawable/back_btn_color"
+                android:clickable="false"
+                android:fontFamily="@font/prompt_regular"
+                android:text="Ok"
+                android:textColor="@color/white"
+                android:textSize="@dimen/small_font_size"
+                app:layout_constraintBottom_toBottomOf="@+id/editText"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/editText"
+                app:layout_constraintTop_toTopOf="@+id/editText" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="@dimen/_40mdp"
+        android:layout_height="@dimen/_30mdp"
+        android:background="@drawable/back_btn_color"
+        android:text="Exit"
+        android:layout_marginTop="@dimen/space_size"
+        android:textColor="@color/white"
+        android:textSize="@dimen/small_font_size"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/constraintLayout4"
+        app:layout_constraintStart_toStartOf="@+id/constraintLayout4"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout4"
+        app:layout_constraintVertical_bias="0.5" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="@dimen/_270mdp"
+    android:layout_height="@dimen/_320mdp"
+    android:background="@drawable/popup_back2">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/main_page"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <TextView
+            android:id="@+id/textView14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_18mdp"
+            android:fontFamily="@font/prompt_regular"
+            android:text="Home Name :"
+            android:textColor="@color/white"
+            android:textSize="@dimen/big_font_size"
+            app:layout_constraintStart_toStartOf="@+id/home_name"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/asdasdsa"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/space_size"
+            android:fontFamily="@font/prompt_regular"
+            android:text="Home Location :"
+            android:textColor="@color/white"
+            android:textSize="@dimen/big_font_size"
+            app:layout_constraintStart_toStartOf="@+id/home_name"
+            app:layout_constraintTop_toBottomOf="@+id/home_name" />
+
+        <EditText
+            android:id="@+id/home_name"
+            android:layout_width="@dimen/_220mdp"
+            android:layout_height="@dimen/_35mdp"
+            android:layout_marginTop="@dimen/space_size"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.492"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView14" />
+
+        <Button
+            android:id="@+id/find_location_btn"
+            android:layout_width="@dimen/_50mdp"
+            android:layout_height="@dimen/_30mdp"
+            android:background="@drawable/back_btn_color"
+            android:fontFamily="@font/prompt_regular"
+            android:text="Find"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="@dimen/normal_font_size"
+            app:layout_constraintBottom_toBottomOf="@+id/location_e"
+            app:layout_constraintEnd_toEndOf="@+id/home_name"
+            app:layout_constraintTop_toTopOf="@+id/location_n" />
+
+        <TextView
+            android:id="@+id/locatiwerwron_n"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/space_size"
+
+            android:fontFamily="@font/prompt_regular"
+            android:paddingLeft="@dimen/_4mdp"
+            android:paddingRight="@dimen/_4mdp"
+            android:text="N :"
+            android:textColor="@color/white"
+            android:textSize="@dimen/big_font_size"
+            app:layout_constraintStart_toStartOf="@+id/asdasdsa"
+            app:layout_constraintTop_toBottomOf="@+id/asdasdsa" />
+
+        <TextView
+            android:id="@+id/location_n"
+            android:layout_width="@dimen/_120mdp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/back_btn_color"
+            android:fontFamily="@font/prompt_regular"
+            android:paddingLeft="@dimen/_4mdp"
+            android:paddingRight="@dimen/_4mdp"
+
+            android:textColor="@color/white"
+            android:textSize="@dimen/big_font_size"
+            app:layout_constraintBottom_toBottomOf="@+id/locatiwerwron_n"
+            app:layout_constraintStart_toEndOf="@+id/locatiwerwron_n"
+            app:layout_constraintTop_toTopOf="@+id/locatiwerwron_n" />
+
+        <TextView
+            android:id="@+id/locatiwerwrasdasdon_n"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/space_size"
+
+            android:fontFamily="@font/prompt_regular"
+            android:paddingLeft="@dimen/_4mdp"
+            android:paddingRight="@dimen/_4mdp"
+            android:text="E :"
+            android:textColor="@color/white"
+            android:textSize="@dimen/big_font_size"
+            app:layout_constraintStart_toStartOf="@+id/locatiwerwron_n"
+            app:layout_constraintTop_toBottomOf="@+id/locatiwerwron_n" />
+
+        <TextView
+            android:id="@+id/location_e"
+            android:layout_width="@dimen/_120mdp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/back_btn_color"
+            android:fontFamily="@font/prompt_regular"
+            android:paddingLeft="@dimen/_4mdp"
+            android:paddingRight="@dimen/_4mdp"
+
+            android:textColor="@color/white"
+            android:textSize="@dimen/big_font_size"
+            app:layout_constraintBottom_toBottomOf="@+id/locatiwerwrasdasdon_n"
+            app:layout_constraintStart_toEndOf="@+id/locatiwerwrasdasdon_n"
+            app:layout_constraintTop_toTopOf="@+id/locatiwerwrasdasdon_n" />
+
+        <Button
+            android:id="@+id/done_edit_btn"
+            android:layout_width="@dimen/_50mdp"
+            android:layout_height="@dimen/_30mdp"
+            android:layout_marginTop="80dp"
+            android:background="@drawable/back_btn_color"
+            android:fontFamily="@font/prompt_regular"
+            android:text="Done"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="@dimen/normal_font_size"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/delete_home"
+            app:layout_constraintTop_toBottomOf="@+id/location_e"
+            app:layout_constraintVertical_bias="0.504" />
+
+        <Button
+            android:id="@+id/delete_home"
+            android:layout_width="@dimen/_50mdp"
+            android:layout_height="@dimen/_30mdp"
+            android:background="@drawable/back_btn_color"
+            android:fontFamily="@font/prompt_regular"
+            android:text="Delete"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="@dimen/normal_font_size"
+            app:layout_constraintBottom_toBottomOf="@+id/done_edit_btn"
+            app:layout_constraintEnd_toStartOf="@+id/done_edit_btn"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/done_edit_btn"
+            app:layout_constraintVertical_bias="0.504" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/locating_page"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/main_page"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/add_home_btn_2"
+            android:layout_width="@dimen/_180mdp"
+            android:layout_height="@dimen/_230mdp"
+            android:layout_centerInParent="true"
+            android:padding="@dimen/_15mdp"
+            android:visibility="visible"
+
+            app:layout_constraintBottom_toTopOf="@+id/textView15"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.5"
+            app:lottie_autoPlay="true"
+            app:lottie_loop="true"
+            app:lottie_rawRes="@raw/locating_home_animation" />
+
+        <TextView
+            android:id="@+id/textView15"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Please wait..."
+            android:textColor="@color/white"
+            android:textSize="@dimen/big_font_size"
+            app:layout_constraintBottom_toTopOf="@+id/cuntdown"
+            app:layout_constraintEnd_toEndOf="@+id/add_home_btn_2"
+            app:layout_constraintStart_toStartOf="@+id/add_home_btn_2"
+            app:layout_constraintTop_toBottomOf="@+id/add_home_btn_2"
+            app:layout_constraintVertical_bias="0.5" />
+
+        <TextView
+            android:id="@+id/cuntdown"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:text="20s"
+            android:textColor="@color/white"
+            android:textSize="@dimen/big_font_size"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/textView15"
+
+            app:layout_constraintStart_toStartOf="@+id/textView15"
+            app:layout_constraintTop_toBottomOf="@+id/textView15"
+            app:layout_constraintVertical_bias="0.5" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

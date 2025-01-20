@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="@dimen/_280mdp"
+    android:layout_height="@dimen/_110mdp"
+    android:padding="@dimen/_5mdp"
+    android:background="@drawable/popup_back2"
+    >
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/header_space_size"
+        android:layout_marginTop="@dimen/header_space_size"
+        android:text="Send or Receive New Database?"
+        android:textColor="@color/white"
+        android:textSize="@dimen/big_font_size"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/select_send_btn"
+        android:layout_width="@dimen/_65mdp"
+        android:layout_height="@dimen/_30mdp"
+        android:background="@drawable/back_btn_color"
+        android:layout_marginRight="@dimen/header_space_size"
+        android:text="Send"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="@dimen/small_font_size"
+        app:layout_constraintBottom_toBottomOf="@+id/select_receive_btn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/select_receive_btn" />
+
+    <Button
+        android:id="@+id/select_receive_btn"
+        android:layout_width="@dimen/_65mdp"
+        android:layout_height="@dimen/_30mdp"
+        android:textSize="@dimen/small_font_size"
+        android:textColor="@color/white"
+        android:text="Receive"
+        android:textAllCaps="false"
+        android:layout_marginRight="@dimen/header_space_size"
+        android:layout_marginBottom="@dimen/header_space_size"
+        android:background="@drawable/back_btn_color"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/select_send_btn"
+        app:layout_constraintTop_toBottomOf="@+id/textView8"
+        app:layout_constraintVertical_bias="1.0" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

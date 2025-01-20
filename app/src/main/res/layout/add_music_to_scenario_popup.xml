@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="550dp"
+    android:layout_height="550dp"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:layout_gravity="center"
+    android:background="@drawable/popupback"
+    tools:ignore="MissingDefaultResource">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:text="Select Scenarios :"
+        android:layout_marginBottom="10dp">
+
+    </TextView>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/scenario_add_music_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_weight="15"
+        android:layout_height="match_parent"
+        android:padding="10dp"
+        >
+
+
+
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+    <Button
+        android:id="@+id/cancel"
+        android:layout_width="@dimen/_40mdp"
+        android:layout_weight="1"
+        android:layout_height="@dimen/_15mdp"
+        android:background="@drawable/back_btn_color"
+        android:text="Cancel"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:layout_gravity="center"
+
+        android:textSize="@dimen/_7font_mdp"
+        android:layout_margin="10dp"
+        />
+
+
+
+
+</LinearLayout>
