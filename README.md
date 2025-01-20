@@ -4,7 +4,7 @@ https://griffin-bms.com/
 It provides full control over the home, including lighting, curtains, heating, cooling, switches, plugs, and electric water valves.
 
 
-![Alt text](Image.jpg)
+![Alt text](image.jpg)
 
 
 
